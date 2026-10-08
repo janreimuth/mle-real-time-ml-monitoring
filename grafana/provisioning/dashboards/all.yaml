@@ -1,0 +1,12 @@
+apiVersion: 1
+
+providers:
+  # Load every dashboard JSON file mounted into /etc/grafana/dashboards.
+  - name: default
+    orgId: 1
+    folder: ''
+    type: file
+    disableDeletion: false
+    allowUiUpdates: true
+    options:
+      path: /etc/grafana/dashboards

@@ -1,0 +1,26 @@
+[project]
+name = "mle-real-time-ml-monitoring"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "click>=8.3.3",
+    "evidently>=0.7.23",
+    "fastapi>=0.115.12",
+    "mlflow>=3.16.1",
+    "pandas>=3.0.6",
+    "prometheus-fastapi-instrumentator>=7.1.0",
+    "prometheus-client>=0.21.1",
+    "pydantic>=2.11.4",
+    "pyarrow>=25.0.1",
+    "python-dotenv>=1.2.4",
+    "pyyaml>=6.0.2",
+    "requests>=2.32.3",
+    "scikit-learn>=1.9.1",
+    "uvicorn>=0.34.2",
+]
+
+[tool.rumdl]
+disable = ["MD013"]
+
+[tool.rumdl.MD033]
+allowed-elements = ["details", "summary"]

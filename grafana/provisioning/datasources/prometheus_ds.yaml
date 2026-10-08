@@ -1,0 +1,11 @@
+apiVersion: 1
+
+datasources:
+  # Grafana runs in the same Compose network as Prometheus, so it uses the
+  # Prometheus service name instead of localhost.
+  - name: Prometheus
+    uid: prometheus
+    access: proxy
+    type: prometheus
+    url: http://prometheus:9090
+    isDefault: true

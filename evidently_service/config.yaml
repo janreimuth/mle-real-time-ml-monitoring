@@ -1,0 +1,13 @@
+column_mapping:
+  categorical_features:
+  - PULocationID
+  - DOLocationID
+  numerical_features:
+  - trip_distance
+  target: duration
+  prediction: prediction
+
+service:
+  calculation_period_sec: 10
+  reference_path: ./green_taxi_data/reference.csv
+  window_size: 250

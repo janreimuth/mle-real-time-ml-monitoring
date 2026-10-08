@@ -1,0 +1,12 @@
+.git/
+.venv/
+.env
+.DS_Store
+__pycache__/
+*.py[cod]
+data/
+mlruns/
+mlflow-data/
+*.db
+*.log
+**/latest_report*.html
